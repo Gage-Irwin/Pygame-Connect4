@@ -182,7 +182,7 @@ class Board():
 
 def main():
 
-    Chess = Board()
+    connect4 = Board()
     clock = pygame.time.Clock()
     running = True
     while running:
@@ -193,9 +193,8 @@ def main():
                 pygame.quit()
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_r:
-                    Chess.reset_board()
-        screen.fill(WHITE)
-        Chess.draw()
+                    connect4.reset_board()
+        connect4.draw()
 
         pygame.display.update()
 
